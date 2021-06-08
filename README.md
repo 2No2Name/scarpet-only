@@ -1,3 +1,13 @@
+# Scarpet Only
+
+Only scarpet from carpet.
+
+This mod takes [carpet](https://github.com/gnembon/fabric-carpet) mod and disables most of its features.
+
+
+
+Previously:
+
 # Fabric Carpet
 
 Cause all carpets are made of fabric?  

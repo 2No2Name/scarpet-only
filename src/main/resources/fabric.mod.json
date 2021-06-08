@@ -1,17 +1,17 @@
 {
   "schemaVersion": 1,
-  "id": "carpet",
+  "id": "scarpetonly",
   "version": "${version}",
 
-  "name": "Carpet Mod",
-  "description": "Carpet made out of fabric",
+  "name": "Scarpet Only Mod",
+  "description": "Scarpet without Carpet made out of ",
   "authors": [
-    "gnembon, ..."
+    "2No2Name, gnembon, ..."
   ],
   "contact": {
-    "homepage": "https://github.com/gnembon/fabric-carpet",
-    "issues": "https://github.com/gnembon/fabric-carpet/issues",
-    "sources": "https://github.com/gnembon/fabric-carpet"
+    "homepage": "https://github.com/2No2Name/scarpet-only",
+    "issues": "https://github.com/2No2Name/scarpet-only/issues",
+    "sources": "https://github.com/2No2Name/scarpet-only"
   },
 
   "license": "MIT",
@@ -35,5 +35,8 @@
     "minecraft": "1.17.x",
     "fabricloader": ">=0.11.3",
     "java": ">=16"
+  },
+  "breaks": {
+    "carpet": "*"
   }
 }

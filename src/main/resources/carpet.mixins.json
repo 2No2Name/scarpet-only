@@ -3,6 +3,7 @@
   "refmap": "fabric-carpet-refmap.json",
   "package": "carpet.mixins",
   "compatibilityLevel": "JAVA_16",
+  "plugin": "carpet.ScarpetMixinPlugin",
   "mixins": [
     "BarrierBlock_updateSuppressionBlockMixin",
 

@@ -2,6 +2,7 @@ package carpet.mixins;
 
 import carpet.CarpetServer;
 import carpet.CarpetSettings;
+import carpet.commands.ScriptCommand;
 import com.mojang.brigadier.CommandDispatcher;
 import net.minecraft.server.command.CommandManager;
 import net.minecraft.server.command.ServerCommandSource;
@@ -26,8 +27,9 @@ public abstract class CommandManagerMixin
 
     @Inject(method = "<init>", at = @At("RETURN"))
     private void onRegister(CommandManager.RegistrationEnvironment arg, CallbackInfo ci) {
-        CarpetServer.registerCarpetCommands(this.dispatcher);
-        CarpetServer.registerCarpetCommands(this.dispatcher, arg);
+        ScriptCommand.register(dispatcher);
+//        CarpetServer.registerCarpetCommands(this.dispatcher);
+//        CarpetServer.registerCarpetCommands(this.dispatcher, arg);
     }
 
     @Inject(method = "execute", at = @At("HEAD"))
